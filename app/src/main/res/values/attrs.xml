@@ -9,4 +9,15 @@
         <attr name="answer" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="QuizCardMultipleChoice">
+        <attr name="answerA" format="string" />
+        <attr name="answerAIsCorrect" format="boolean" />
+        <attr name="answerB" format="string" />
+        <attr name="answerBIsCorrect" format="boolean" />
+        <attr name="answerC" format="string" />
+        <attr name="answerCIsCorrect" format="boolean" />
+        <attr name="answerD" format="string" />
+        <attr name="answerDIsCorrect" format="boolean" />
+    </declare-styleable>
+
 </resources>

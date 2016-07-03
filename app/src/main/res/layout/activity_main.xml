@@ -23,13 +23,104 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:id="@+id/quiz_container">
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="What is mean distance between Earth and Moon?"
+            custom:answerA="275,000 km"
+            custom:answerB="300,000 km"
+            custom:answerC="385,000 km"
+            custom:answerCIsCorrect="true"
+            custom:answerD="400,000 km"
+            custom:image="@drawable/moon"/>
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="Which solar system object is shown here?"
+            custom:answerA="Moon"
+            custom:answerB="Ganymede"
+            custom:answerC="Callisto"
+            custom:answerD="Mercury"
+            custom:answerDIsCorrect="true"
+            custom:image="@drawable/mercury"/>
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="Which of these planets did Voyager 2 visit?"
+            custom:answerA="Jupiter"
+            custom:answerAIsCorrect="true"
+            custom:answerB="Saturn"
+            custom:answerBIsCorrect="true"
+            custom:answerC="Uranus"
+            custom:answerCIsCorrect="true"
+            custom:answerD="Neptune"
+            custom:answerDIsCorrect="true"
+            custom:image="@drawable/voyager2"/>
 
         <com.example.android.spacequiz.QuizCardText
             style="@style/quiz_card_style"
-            custom:question="What is this?"
-            custom:answer="moon"
-            custom:image="@drawable/moon"/>
+            custom:question="Which solar system object is shown here?"
+            custom:answer="Titan"
+            custom:image="@drawable/titan"/>
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="What is the distance to the Andromeda Galaxy?"
+            custom:answerA="1,000 LJ"
+            custom:answerB="500,000 LJ "
+            custom:answerC="1,000,000 LJ"
+            custom:answerD="2,500,000 LJ "
+            custom:answerDIsCorrect="true"
+            custom:image="@drawable/andromeda"/>
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="Which of these moons orbit Jupiter?"
+            custom:answerA="Enceladus"
+            custom:answerB="Io"
+            custom:answerBIsCorrect="true"
+            custom:answerC="Triton"
+            custom:answerD="Europa"
+            custom:answerDIsCorrect="true"
+            custom:image="@drawable/jupiter"/>
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="What is the age of the universe?"
+            custom:answerA="6,000 years"
+            custom:answerB="600,000 years"
+            custom:answerC="13.8 billion years"
+            custom:answerCIsCorrect="true"
+            custom:answerD="100 billion years"
+            custom:image="@drawable/galaxycluster"/>
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="What is the &quot;cosmic microwave background&quot;?"
+            custom:answerA="Random space fluctuations"
+            custom:answerB="Stray radiation of distant stars"
+            custom:answerC="Prove of the &quot;ether&quot;"
+            custom:answerD="Remaing radiation of the Big Bang"
+            custom:answerDIsCorrect="true"
+            custom:image="@drawable/microwavebackground"/>
+
+        <com.example.android.spacequiz.QuizCardText
+            style="@style/quiz_card_style"
+            custom:question="Which solar system object is now considered a &quot;dwarf planet&quot;?"
+            custom:answer="Pluto"
+            custom:image="@drawable/pluto"/>
+
+        <com.example.android.spacequiz.QuizCardMultipleChoice
+            style="@style/quiz_card_style"
+            custom:question="How high is Olympus Mons, the highest mountain on Mars?"
+            custom:answerA="26,000 m"
+            custom:answerAIsCorrect="true"
+            custom:answerB="8,850 m "
+            custom:answerC="100,000 m"
+            custom:answerD="2,000 m"
+            custom:image="@drawable/mars"/>
 
     </LinearLayout>
 
