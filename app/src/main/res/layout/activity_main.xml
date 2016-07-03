@@ -19,25 +19,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.spacequiz.MainActivity">
 
-    <com.example.android.spacequiz.QuizCard
-        style="@style/quiz_card_style"
-        custom:question="What is the moon?"
-        custom:image="@drawable/moon"/>
 
-    <com.example.android.spacequiz.QuizCard
-        style="@style/quiz_card_style"
-        custom:question="What is the moon?"
-        custom:image="@drawable/moon"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/quiz_container">
 
-    <com.example.android.spacequiz.QuizCard
-        style="@style/quiz_card_style"
-        custom:question="What is the moon?"
-        custom:image="@drawable/moon"/>
+        <com.example.android.spacequiz.QuizCardText
+            style="@style/quiz_card_style"
+            custom:question="What is this?"
+            custom:answer="moon"
+            custom:image="@drawable/moon"/>
 
-    <com.example.android.spacequiz.QuizCard
-        style="@style/quiz_card_style"
-        custom:question="What is the moon?"
-        custom:image="@drawable/moon"/>
+    </LinearLayout>
 
+    <Button
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grade_button"
+        android:onClick="onGradeQuiz"/>
 </LinearLayout>
 </ScrollView>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Space Quiz</string>
+    <string name="grade_button">grade quiz</string>
+    <string name="result_toast">Your score:</string>
 </resources>

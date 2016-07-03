@@ -17,7 +17,7 @@ public class QuizCard extends LinearLayout
 {
     ImageView mImageView;
     TextView mQuestionView;
-    View mContentView;
+    LinearLayout mContentView;
 
     public QuizCard(Context context, AttributeSet attrs)
     {
@@ -35,15 +35,15 @@ public class QuizCard extends LinearLayout
         Drawable imageDrawable = a.getDrawable(R.styleable.QuizCard_image);
         String question = a.getString(R.styleable.QuizCard_question);
 
-
         mImageView = (ImageView) findViewById(R.id.image_view);
         mImageView.setImageDrawable(imageDrawable);
 
         mQuestionView = (TextView) findViewById(R.id.question_view);
-        // mQuestionView.setText(question);
+        mQuestionView.setText(question);
+        mContentView = (LinearLayout) findViewById(R.id.content_view);
     }
 
-    boolean IsAnswerCorrect()
+    boolean isAnswerCorrect()
     {
         return false;
     }

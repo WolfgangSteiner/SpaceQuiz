@@ -4,4 +4,9 @@
         <attr name="image" format="reference" />
         <attr name="question" format="string"/>
     </declare-styleable>
+
+    <declare-styleable name="QuizCardText">
+        <attr name="answer" format="string" />
+    </declare-styleable>
+
 </resources>
